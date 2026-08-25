@@ -801,3 +801,60 @@ p {
 .section-dark .text-link {
     color: var(--bpre-white);
 }
+
+/* =========================================================
+   FORMSPREE FORM MESSAGES
+========================================================= */
+
+.form-message {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px 18px;
+
+    border-radius: 6px;
+
+    font-size: 0.85rem;
+
+    line-height: 1.5;
+
+}
+
+
+.form-message.success {
+
+    display: block;
+
+    background: #eaf7ef;
+
+    border: 1px solid #b9dfc6;
+
+    color: #21643a;
+
+}
+
+
+.form-message.error {
+
+    display: block;
+
+    background: #fff0f0;
+
+    border: 1px solid #e4b7b7;
+
+    color: #8a2929;
+
+}
+
+
+.form-submit:disabled {
+
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
