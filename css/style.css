@@ -2182,32 +2182,89 @@ p {
     flex-shrink: 0;
 
   /* =========================================================
-   RESPONSIVE LOGO
+   BPRE VISUALS — RESPONSIVE LOGO
    ========================================================= */
 
+/* Desktop */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 150px;
+    height: 70px;
+    overflow: hidden;
+}
+
 .logo img {
-    width: 135px;
+    width: 150px;
     height: auto;
     display: block;
 }
 
-/* TABLET */
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+    .logo {
+        width: 135px;
+        height: 65px;
+    }
+
+    .logo img {
+        width: 135px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
 @media (max-width: 900px) {
+
+    .logo {
+        width: 120px;
+        height: 60px;
+    }
+
     .logo img {
         width: 120px;
     }
 }
 
-/* MOBILE */
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 700px) {
+
+    .logo {
+        width: 105px;
+        height: 55px;
+    }
+
     .logo img {
-        width: 110px;
+        width: 105px;
     }
 }
 
-/* SMALL MOBILE */
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
 @media (max-width: 420px) {
+
+    .logo {
+        width: 95px;
+        height: 50px;
+    }
+
     .logo img {
-        width: 100px;
+        width: 95px;
     }
 }
