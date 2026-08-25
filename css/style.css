@@ -2180,10 +2180,34 @@ p {
     display: inline-flex;
     align-items: center;
     flex-shrink: 0;
-}
+
+  /* =========================================================
+   RESPONSIVE LOGO
+   ========================================================= */
 
 .logo img {
-    width: 170px;
+    width: 135px;
     height: auto;
     display: block;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .logo img {
+        width: 120px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .logo img {
+        width: 110px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 420px) {
+    .logo img {
+        width: 100px;
+    }
 }
