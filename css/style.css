@@ -2216,3 +2216,165 @@ p {
         width: 30px;
     }
 }
+
+/* =========================================================
+   05. GLOBAL HEADER
+   SAME ON EVERY PAGE
+   ========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid rgba(33, 49, 79, 0.08);
+    backdrop-filter: blur(14px);
+}
+
+.header-inner {
+    width: 100%;
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   ========================================================= */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+
+/* =========================================================
+   MOBILE HAMBURGER
+   IDENTICAL POSITION ON EVERY PAGE
+   ========================================================= */
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex: 0 0 42px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Hamburger lines */
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 5px auto;
+    background: var(--bpre-navy);
+    transition: var(--transition);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-inner {
+        min-height: 74px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .header-inner {
+        min-height: 74px;
+        gap: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .main-nav {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 74px;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+        padding: 15px;
+
+        background: var(--bpre-white);
+        border: 1px solid var(--bpre-border);
+        border-radius: 12px;
+        box-shadow: var(--shadow-soft);
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav a {
+        padding: 13px 10px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .header-inner {
+        min-height: 70px;
+    }
+
+    .menu-toggle {
+        width: 42px;
+        height: 42px;
+        flex-basis: 42px;
+    }
+
+}
