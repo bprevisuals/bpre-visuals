@@ -2176,90 +2176,44 @@ p {
 }
 
 
-/* =========================================================
-   BPRE VISUALS — RESPONSIVE LOGO
-   ========================================================= */
+/* BPRE VISUALS - SMALL RESPONSIVE LOGO */
 
-/* Desktop */
 .logo {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    width: 150px;
-    height: 70px;
-    overflow: hidden;
 }
 
 .logo img {
-    width: 150px;
+    width: 45px;
     height: auto;
     display: block;
 }
 
-
-/* =========================================================
-   LAPTOP
-   ========================================================= */
-
+/* Laptop */
 @media (max-width: 1199px) {
-
-    .logo {
-        width: 135px;
-        height: 65px;
-    }
-
     .logo img {
-        width: 135px;
+        width: 42px;
     }
 }
 
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
+/* Tablet */
 @media (max-width: 900px) {
-
-    .logo {
-        width: 120px;
-        height: 60px;
-    }
-
     .logo img {
-        width: 120px;
+        width: 38px;
     }
 }
 
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
+/* Mobile */
 @media (max-width: 700px) {
-
-    .logo {
-        width: 105px;
-        height: 55px;
-    }
-
     .logo img {
-        width: 105px;
+        width: 33px;
     }
 }
 
-
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
-
+/* Small mobile */
 @media (max-width: 420px) {
-
-    .logo {
-        width: 95px;
-        height: 50px;
-    }
-
     .logo img {
-        width: 95px;
+        width: 30px;
     }
 }
