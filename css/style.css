@@ -431,6 +431,58 @@ p {
 
 }
 
+@media (max-width: 900px) {
+
+    .header-inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        flex-shrink: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+        margin-right: 0;
+
+        flex-shrink: 0;
+    }
+
+    .main-nav {
+        position: absolute;
+
+        top: 100%;
+        left: 16px;
+        right: 16px;
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 15px;
+
+        background: var(--bpre-white);
+
+        border: 1px solid var(--bpre-border);
+
+        border-radius: 12px;
+
+        box-shadow:
+            0 15px 45px rgba(33, 49, 79, 0.12);
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+}
 
 /* =========================================================
    10. PAGE HERO
