@@ -2174,3 +2174,16 @@ p {
     }
 
 }
+
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
